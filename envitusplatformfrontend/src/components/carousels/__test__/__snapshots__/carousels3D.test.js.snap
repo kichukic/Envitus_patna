@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Carousels3D Test Redering Properly with prop values 1`] = `
+<div
+  data-test="mainDiv"
+>
+  <model-viewer
+    alt="testAltBuilding"
+    auto-rotate={true}
+    camera-controls={true}
+    className="d-block mx-auto"
+    data-test="modelViewComponent"
+    key="testBuilding"
+    src="dummypath"
+  >
+    <Connect(DeviceList)
+      data-test="DeviceComponent"
+      listType="sensor3D"
+    />
+  </model-viewer>
+</div>
+`;

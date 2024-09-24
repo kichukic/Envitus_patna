@@ -1,0 +1,69 @@
+@import '../../styles/index.scss';
+
+.dot {
+    height: 15px;
+    width: 15px;
+    border: 2px solid #A9A9A9;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+}
+
+.dot-selected-live {
+    animation: liveglow 1s infinite alternate;
+}
+
+.dot-selected-not-live {
+    animation: notliveglow 1s infinite alternate;
+}
+
+.spots3d {
+    height: 13px;
+    width: 13px;
+    background-color: #27AE60;
+    border-radius: 50%;
+    display: block;
+    border: none;
+    box-sizing: border-box;
+    animation: glow 1s infinite alternate;
+    --min-hotspot-opacity: 0;
+}
+
+.spots3d-active {
+    border: 2px solid white;
+}
+
+.post {
+    opacity: 0.5;
+    display: inline-block;
+    position: absolute;
+    height: 2rem;;
+}
+
+.post-active {
+    animation: pBox 1s infinite alternate;
+}
+
+@keyframes liveglow {
+    to {
+        background-color: #51ff0d;;
+    }
+}
+
+@keyframes notliveglow {
+    to {
+        background-color: #C0C0C0;;
+    }
+}
+
+@keyframes borderGlow {
+    to {
+        border: 1px solid #51ff0d;;
+    }
+}
+
+@keyframes pBox {
+    to {
+        opacity: 1;
+    }
+}

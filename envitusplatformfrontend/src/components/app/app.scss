@@ -1,0 +1,62 @@
+@import '../../styles/index.scss';
+@import 'react-redux-toastr/src/styles/index';
+
+body {
+    background-color: #fbfbfb;
+    color: #666666;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: $base-color;
+    border-color: $base-color;
+}
+
+.btn-primary:hover {
+    background-color: $base-hover-color;
+    border-color: $base-hover-color;
+}
+
+.container {
+    width: 90%;
+    padding: 0;
+}
+
+.selected-row {
+    outline: medium solid  $base-color;
+}
+
+.radio-group {
+    color: $base-color;
+    border-color: $base-color;
+    padding: 12px;
+}
+
+.radio-group label:hover {
+    background-color: $base-hover-color;
+    border-color: $base-hover-color;
+}
+
+.btn-outline-success:not(:disabled):not(.disabled).active, .btn-outline-success:not(:disabled):not(.disabled):active, .show>.btn-outline-success.dropdown-toggle, .show>.btn-success.dropdown-toggle {
+    background-color: $base-hover-color;
+    border-color: $base-hover-color;
+}
+
+.toggle-button {
+    color: $base-color;
+    border-color: $base-color;            
+}
+
+.toggle-button:hover {
+    background-color: $base-hover-color;
+    border-color: $base-hover-color;
+}
+
+.btn-success:hover {
+    background-color: $base-hover-color;
+    border-color: $base-hover-color;
+}
+
+summary {
+    display: initial;
+}

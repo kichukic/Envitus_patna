@@ -1,0 +1,27 @@
+@import '../../styles/index.scss';
+
+.oprnButton:hover {
+    color: $base-hover-color;
+}
+
+.selected-dev {
+    background-color: #DCFFD1;
+}
+
+.status-dot {
+    margin-top: 2px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    border: 2px solid #A9A9A9;
+}
+
+.live {
+    background-color: #27AE60;
+}
+
+.not-live {
+    background-color: #696969;
+}

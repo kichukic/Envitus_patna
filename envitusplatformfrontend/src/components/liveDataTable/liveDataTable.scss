@@ -1,0 +1,29 @@
+@import '../../styles/index.scss';
+
+.align-tl table {
+    text-align: left;
+}
+
+.align-tc table {
+    text-align: center;
+}
+
+.oprnClass:hover {
+    color: $base-hover-color;
+}
+
+.oprnClass {
+    font-size: 20px;
+}
+
+.stickyHead {
+    position: sticky; 
+    top: -1px;
+}
+
+.strctr {
+    max-height: 70vh;
+    .content {
+        max-height: 70vh;
+    }
+}

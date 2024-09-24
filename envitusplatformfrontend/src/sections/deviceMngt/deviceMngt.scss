@@ -1,0 +1,18 @@
+@import '../../styles/index.scss';
+
+.oprnButton:hover {
+    color: $base-hover-color;
+}
+
+.form-sub-heading h5{
+    border-bottom: 1px solid #dee2e6;
+    padding: 5px 0px;
+    margin-bottom: 10px;
+}
+
+.buildImage {
+    position: relative;
+    padding: 0;
+    max-width: 400px;
+    width: 400px;
+}

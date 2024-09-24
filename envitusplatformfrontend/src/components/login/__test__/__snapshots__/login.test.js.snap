@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login Test Authentication snapshot 1`] = `
+<Form
+  data-test="loginForm"
+  inline={false}
+  onSubmit={[Function]}
+>
+  <FormGroup
+    controlId="formBasicEmail"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Username
+    </FormLabel>
+    <FormControl
+      data-test="loginFormUname"
+      placeholder="Enter email"
+      required={true}
+      type="text"
+    />
+  </FormGroup>
+  <FormGroup
+    controlId="formBasicPassword"
+  >
+    <FormLabel
+      column={false}
+      srOnly={false}
+    >
+      Password
+    </FormLabel>
+    <FormControl
+      data-test="loginFormPswd"
+      placeholder="Password"
+      required={true}
+      type="password"
+    />
+  </FormGroup>
+  <AlertBox
+    show={false}
+    text=""
+    variant=""
+  />
+  <Button
+    active={false}
+    disabled={false}
+    type="submit"
+    variant="primary"
+  >
+    Login
+  </Button>
+</Form>
+`;

@@ -1,0 +1,13 @@
+@import '../../styles/index.scss';
+
+.pagination li a {
+    color: $base-hover-color;
+}
+
+.pagination a:hover, .pagination li:hover {
+    color: $base-color;
+}
+
+.pagination li.active a {
+    background-color: $base-hover-color;
+}

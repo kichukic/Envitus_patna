@@ -1,0 +1,38 @@
+@import '../../styles/index.scss';
+
+.csvBtn {
+    display:inline-block;
+    color: $base-color;
+    margin-bottom:0;
+    font-weight:400;
+    text-align:center;
+    white-space:nowrap;
+    vertical-align:middle;
+    -ms-touch-action:manipulation;
+    touch-action:manipulation;
+    cursor:pointer;
+    background-image:none;
+    border:1px solid $base-color;
+    background-color: Transparent;
+    padding:6px 12px;
+    font-size:17px;
+    line-height:1.42857143;
+    border-radius:4px;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    transition-duration: .2s;
+}
+
+.csvBtn:hover {
+    background-color: $base-hover-color;
+    border-color: $base-hover-color;
+    color: white;
+}
+
+.btn-success {
+    background-color: $base-hover-color;
+    border-color: $base-hover-color;
+    color: white;
+}

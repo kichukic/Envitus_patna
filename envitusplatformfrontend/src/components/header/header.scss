@@ -1,0 +1,31 @@
+@import '../../styles/index.scss';
+
+.navbar-logo {
+    width: 80px;
+}
+
+.navbar-nav a{
+    display: block;
+    padding: .5rem 1rem;
+    color: rgba(0,0,0,.5);
+    font-weight: bold;;
+} 
+
+.navbar-nav .selected{
+    color: $base-color;
+}
+
+.navbar-nav a:hover{
+    color:$base-hover-color;
+    text-decoration: none;
+    
+} 
+
+.navbar-nav button{
+    display: block;
+    padding: .5rem 1rem;
+    color: rgba(0,0,0,.5);
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+}

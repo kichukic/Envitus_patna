@@ -1,0 +1,12 @@
+@import '../../styles/index.scss';
+
+.card-header {
+    .active {
+        background-color: $base-hover-color;
+        color: white;
+    }
+}
+
+.anim-accordion{
+    transition: 0.5s;
+}

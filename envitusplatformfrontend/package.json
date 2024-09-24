@@ -1,0 +1,75 @@
+{
+  "name": "my-app-react",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": ".",
+  "dependencies": {
+    "@google/model-viewer": "^0.10.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.21.1",
+    "bootstrap": "^4.4.1",
+    "chart.js": "^2.9.4",
+    "d3": "^5.15.0",
+    "env-cmd": "^10.1.0",
+    "google-map-react": "^1.1.7",
+    "highcharts": "^8.2.2",
+    "highcharts-react-official": "^3.0.0",
+    "lodash": "^4.17.20",
+    "node-sass": "^4.14.1",
+    "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.17",
+    "react-chartjs-2": "^2.11.1",
+    "react-dom": "^16.12.0",
+    "react-icons": "^3.9.0",
+    "react-json-to-csv": "^1.0.4",
+    "react-loader-spinner": "^3.1.14",
+    "react-perfect-scrollbar": "^1.5.8",
+    "react-redux": "^7.2.0",
+    "react-redux-toastr": "^7.6.5",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.3.1",
+    "react-select": "^3.1.0",
+    "redux": "^4.0.5",
+    "redux-freeze": "^0.1.7",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --verbose",
+    "coverage": "react-scripts test --coverage --watchAll=false",
+    "eject": "react-scripts eject",
+    "copyScss:AQMS": "cp src/styles/variableAQMS.scss src/styles/index.scss",
+    "start:dev": "npm run copyScss:AQMS && env-cmd -f config/.env.dev npm start",
+    "start:stage": "npm run copyScss:AQMS && env-cmd -f config/.env.stage npm start",
+    "start:prod": "npm run copyScss:AQMS && env-cmd -f config/.env.prod npm start",
+    "build:dev": "npm run copyScss:AQMS && env-cmd -f config/.env.dev npm run build",
+    "build:stage": "npm run copyScss:AQMS && env-cmd -f config/.env.stage npm run build",
+    "build:prod": "npm run copyScss:AQMS && env-cmd -f config/.env.prod npm run build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.4",
+    "jest": "^24.9.0",
+    "jest-enzyme": "^7.1.2"
+  }
+}
