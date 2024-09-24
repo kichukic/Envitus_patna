@@ -1,0 +1,43 @@
+{
+  "apps": [
+    {
+      "name": "Envitus-Patna-Dev",
+      "script": "Main.js",
+      "cwd": ".",
+      "log_date_format": "YYYY-MM-DD HH:mm Z",
+      "autorestart": true,
+      "max_restarts": 10,
+      "min_uptime": "90s",
+      "exec_mode": "fork",
+      "instances": 1,
+      "watch": true,
+      "env": {
+        "PORT": 7005,
+        "NODE_ENV": "development",
+        "PROJECT_TYPE": "AQMS",
+        "FRONT_END_APP_ADDR": "http://localhost:3000",
+        "DEFAULT_DEVICE_TYPE": "ESPATNAOTDR",
+        "SINGLET_POST": "true",
+        "HTTPS": "false",
+        "NEED_AQI": "true",
+        "JWT_SECRET": "rIcJnFtrNKp5PYG8KcEawuRjru4n9fMrOM0ZikfVUuOxiiwQk0OFivOAOHNN",
+        "DB_URL": "mongodb://10.10.3.21:27017/ESBHADB",
+        "PUSH_TRINITY": "false",
+        "PUSH_TRINITY_URL": "",
+        "TRINITY_USERNAME": "",
+        "TRINITY_PASSWORD": "",
+        "TRINITY_APP_AUTH": "",
+        "ROOT_USER_EMAIL": "root@envitus.com",
+        "ROOT_USER_PASSWORD" : "envitus1234"
+      }
+    },
+    {
+      "name": "Envitus-AlarmService-Patna-Dev",
+      "script": "AlarmService.js",
+      "env": {
+        "DB_Name": "AHUDB",
+        "DB_IP": "localhost:27017"
+      }
+    }
+  ]
+}

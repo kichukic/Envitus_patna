@@ -1,0 +1,42 @@
+{
+  "apps": [
+    {
+      "name": "Envitus-Patna-Stage",
+      "script": "Main.js",
+      "cwd": ".",
+      "log_date_format": "YYYY-MM-DD HH:mm Z",
+      "autorestart": true,
+      "max_restarts": 10,
+      "min_uptime": "90s",
+      "exec_mode": "fork",
+      "instances": 1,
+      "watch": false,
+      "env": {
+        "PORT": 4001,
+        "NODE_ENV": "stage",
+        "PROJECT_TYPE": "AQMS",
+        "FRONT_END_APP_ADDR": "http://localhost:3000",
+        "DEFAULT_DEVICE_TYPE": "ESPATNAOTDR",
+        "SINGLET_POST": "true",
+        "HTTPS": "false",
+        "NEED_AQI": "true",
+        "JWT_SECRET": "BOvc5EJUobTpyTttACaghJ8BP8oYsngR1BTW4tGisqvQ7O7we6CmFyLixZ6N",
+        "DB_URL": "mongodb://localhost:27017/ESBHADB",
+        "PUSH_TRINITY": "false",
+        "PUSH_TRINITY_URL": "",
+        "TRINITY_USERNAME": "",
+        "TRINITY_PASSWORD": "",
+        "TRINITY_APP_AUTH": "",
+	"ROOT_USER_EMAIL": "root@envitus.com",
+        "ROOT_USER_PASSWORD" : "envitus1234"
+      }
+    },
+    {
+      "name": "Envitus-AlarmServicePatna-Stage",
+      "script": "AlarmService.js",
+      "env": {
+        "DB_URL":"mongodb://localhost:27017/ESBHADB"
+      }
+    }
+  ]
+}
